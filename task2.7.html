@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Task 2.7</title>
+	<link type="text/css" rel="stylesheet" href="css/reset.css"/>
+	<style>
+		.block{
+			width: 150px;
+			height: 100px;
+			color: white;
+		}
+		.static1{
+			position: static;
+			background: rgb(138,43,226);
+		}
+		.relative1{
+			position: relative;
+			background: rgb(139,0,0);
+		}
+		.relative2{
+			position: relative;
+			background: rgb(205,133,63);
+			top: -30px;
+			left: 30px;
+		}
+		.relative3{
+			width: 600px;
+			height: 400px;
+			position: relative;
+			background: rgb(205,92,92);
+			color: white;
+		}
+		.absolute1{
+			width: 300px;
+			height: 200px;
+			position: absolute;
+			background: rgb(75,0,130);
+			color: white;
+			top: 120px;
+			right: 0;
+		}
+		.fixed1{
+			width: 100px;
+			height: 100px;
+			color: white;
+			background: rgb(34,139,34);
+			position: fixed;
+			right: 0;
+			bottom: 0;
+		}
+	</style>
+</head>	
+
+<body>
+	<div class="block static1">
+		<p>It's a static div!</p>
+	</div>
+	<div class="block relative1">
+		<p>It's a relative div!</p>
+	</div>
+	<div class="block relative2">
+		<p>It's a relative div!</p>
+	</div>
+	<div class="fixed1">
+		<p>It's a fixed div!</p>
+	</div>
+	<div class="relative3">
+		<p>It's a relative div!</p>
+		<div class="absolute1">
+			<p>It's an absolute div with relative parent!</p>
+		</div>
+	</div>
+	
+</body>
+</html>
